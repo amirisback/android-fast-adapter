@@ -1,5 +1,7 @@
 package com.qomunal.opensource.androidresearch.model
 
+import java.util.UUID
+
 /**
  * Created by faisalamircs on 13/01/2024
  * -----------------------------------------
@@ -11,5 +13,7 @@ package com.qomunal.opensource.androidresearch.model
 
 
 data class MainModel(
-    val tag: String
+    var id: String = "",
+    var data: String = "",
+    var uuid: String = UUID.randomUUID().toString(),
 )

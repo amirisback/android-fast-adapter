@@ -60,7 +60,7 @@ dependencies {
 
     implementation("androidx.activity:activity-ktx:1.9.2")
     implementation("androidx.fragment:fragment-ktx:1.8.4")
-    
+
     implementation("androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.6")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
 
@@ -69,12 +69,24 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6")
 
+    implementation("com.mikepenz:fastadapter:5.7.0")
+    implementation("com.mikepenz:fastadapter-extensions-expandable:5.7.0")
+    implementation("com.mikepenz:fastadapter-extensions-binding:5.7.0") // view binding helpers
+    implementation("com.mikepenz:fastadapter-extensions-diff:5.7.0") // diff util helpers
+    implementation("com.mikepenz:fastadapter-extensions-drag:5.7.0") // drag support
+    implementation("com.mikepenz:fastadapter-extensions-paged:5.7.0") // paging support
+    implementation("com.mikepenz:fastadapter-extensions-scroll:5.7.0") // scroll helpers
+    implementation("com.mikepenz:fastadapter-extensions-swipe:5.7.0") // swipe support
+    implementation("com.mikepenz:fastadapter-extensions-ui:5.7.0") // pre-defined ui components
+    implementation("com.mikepenz:fastadapter-extensions-utils:5.7.0") // needs the `expandable`, `drag` and `scroll` extension.
+
+
     implementation("androidx.lifecycle:lifecycle-service:2.8.6")
     implementation("androidx.lifecycle:lifecycle-process:2.8.6")
     implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:2.8.6")
 
     testImplementation("androidx.arch.core:core-testing:2.2.0")
-    testImplementation ("androidx.lifecycle:lifecycle-runtime-testing:2.8.6")
+    testImplementation("androidx.lifecycle:lifecycle-runtime-testing:2.8.6")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
